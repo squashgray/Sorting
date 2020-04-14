@@ -1,5 +1,5 @@
 # TO-DO: Complete the selection_sort() function below 
-
+# arr1 = [1, 5, 8, 4, 2, 9, 6, 0, 3, 7]
 def selection_sort( arr ):
     # loop through n-1 elements
     for i in range(0, len(arr) - 1):
@@ -16,28 +16,22 @@ def selection_sort( arr ):
 
 
     return arr
-
+# print(selection_sort(arr1))
 arr2 = [1, 5, 8, 4, 2, 9, 6, 0, 3, 7]
 # TO-DO:  implement the Bubble Sort function below
 def bubble_sort( arr ):
     go = True
     while go:
+        go = False
         for i in range(0, len(arr) - 1):
             cur_index = i
             j = i+1
-            print(cur_index)
             if arr[j] < arr[cur_index]:
                 arr[cur_index], arr[j] = arr[j], arr[cur_index]
                 go = True
-            else:
-                go = False
+    
            
                 
-
-            
-    
-
-
         
     return arr
 print(bubble_sort(arr2))
